@@ -9,3 +9,12 @@ switchMode.onclick = function(){
     theme.href = "landing.css";
   }
 }
+
+let img = document.getElementById("watch-img");
+
+img.onclick = function(){
+  let activeImg = document.getElementsByClassName("watch-img-active");
+  if(activeImg.className == "watch-img-active"){
+    activeImg.classList.replase("watch-img-active" , "watch-img" );
+  }
+}

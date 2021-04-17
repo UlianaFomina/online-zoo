@@ -131,6 +131,7 @@ body {
   padding-bottom: 14px;
 }
 .watch-online {
+  position: absolute;
   padding-left: 188px;
   padding-top: 206px;
 }
@@ -173,16 +174,231 @@ body {
   margin-left: 5px;
   text-transform: uppercase;
   color: #fefefe;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 21px;
 }
-.whath-animal {
+.watch-animal-content {
   background-image: url("icons/watch-line.svg");
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 900px;
   border-bottom: none;
+  align-items: center;
+  float: left;
+  margin-top: 400px;
+  padding-left: 650px;
+  min-width: 800px;
+}
+.watch-animal-list {
+  display: flex;
+}
+.watch-img {
+  width: 140px;
+  height: 203px;
+}
+.watch-img-active {
+  width: 245px;
+  z-index: 1;
+}
+.watch-animal-list {
+  align-items: center;
+}
+.watch-animal-item {
+  border-radius: 5px;
+}
+.watch-animal-active {
+  height: 352px;
+}
+.watch-animal-item img {
+  border-radius: none;
+  padding-top: 20px;
+}
+.watch-animal-item:first-child {
+  padding-left: 10px;
+}
+.watch-animal-item:not(:last-child) {
+  margin-right: 46px;
+}
+.panda-information {
+  width: 185px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  position: relative;
+  left: 25px;
+  top: -118px;
+}
+.panda-whatch-online {
+  width: 113px;
+  margin-top: -105px;
+  margin-left: 25px;
+  height: 24px;
+  display: flex;
+}
+.panda-whatch-online-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  color: #4bd8b5;
+  text-transform: uppercase;
+  margin-left: 3px;
+  word-wrap: nowrap;
+}
+.panda-whatch-online a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.panda-donate a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.panda-donate {
+  margin-top: -25px;
+  margin-left: 149px;
+  align-items: center;
+  display: flex;
+  width: 74px;
+  height: 24px;
+}
+.panda-donate-text {
+  margin-left: 3px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.content {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 790px;
+  text-align: center;
+}
+.works-page {
+  background-color: #fff;
+}
+.works-title {
+  padding-top: 100px;
+  text-align: start;
+}
+.worcs-subtitle {
+  padding: 30px 0;
+  margin: 0 auto;
+  max-width: 790px;
+  text-align: start;
+}
+.main-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: #333;
+}
+.main-subtitle {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4f4f4f;
+}
+.works-button {
+  max-width: 245px;
+  padding: 60px 0;
+  margin: 0 auto;
+}
+.mission-pade {
+  background-color: #f2f2f2;
+}
+.mission-content {
+  max-width: 1206px;
+  margin: 0 auto;
+}
+.mission-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.mission-title {
+  margin: 15px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #333333;
+}
+.mission-item svg {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 15px;
+}
+.mission-subtitle {
+  padding-bottom: 132px;
+}
+.pets-page {
+  background-color: #fff;
+}
+.pets-content {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.pets-title {
+  text-align: center;
+  padding: 100px 0 35px 0;
+}
+.pets-in-zoo {
+  display: flex;
+  align-items: center;
+}
+.pets-svg1 {
+  margin-right: 20px;
+}
+.pets-svg2 {
+  margin-left: 20px;
+}
+.pets-svg path:hover {
+  cursor: pointer;
+  fill: #333;
+}
+.pets-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.button-container {
+  margin: 0 auto;
+  max-width: 245px;
+}
+.choose {
+  margin: 70px 0;
+  background-color: #4bd8b5;
+  max-width: 245px;
+}
+.choose:hover {
+  cursor: pointer;
+  transition: all 0.7s ease;
+  background-color: #36ad8f;
+}
+.choose-text {
+  margin: 0;
+  padding: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
