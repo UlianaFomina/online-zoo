@@ -2,10 +2,10 @@ let switchMode = document.getElementById("change-button");
 
 switchMode.onclick = function(){
   let theme = document.getElementById("theme");
-  if(theme.getAttribute("href") == "landing.css"){
+  if(theme.getAttribute("href") == "landing.css") {
     theme.href = "landing-dark.css";
   }
-  else{
+  else {
     theme.href = "landing.css";
   }
 }
